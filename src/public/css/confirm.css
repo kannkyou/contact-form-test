@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+.confirm__content {
+    max-width: 900px;
+    margin: 40px auto 60px;
+    padding: 0 15px;
+}
+
+.confirm__heading h2 {
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    color: #82746b;
+}
+
+.confirm-table {
+    margin-bottom: 32px;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #ffffff;
+    border: 1px solid #e5ddd6;
+}
+
+.confirm-table__header {
+    width: 220px;
+    padding: 14px 24px;
+    background-color: #82746b;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1px solid #e5ddd6;
+    border-right: 1px solid #e5ddd6;
+}
+
+.confirm-table__text {
+    padding: 14px 24px;
+    font-size: 14px;
+    color: #82746b;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5ddd6;
+    border-right: 1px solid #e5ddd6;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #82746b;
+}
+
+.confirm-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.confirm-buttons .form {
+    margin: 0;
+}
+
+.form__button-submit {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #82746b;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.form__button-submit:hover {
+    opacity: 0.9;
+}
+
+.form__button-cancel {
+    padding: 10px 40px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background: transparent;
+    color: #82746b;
+    font-size: 13px;
+    text-decoration:underline solid #82746b;
+    cursor: pointer;
+}

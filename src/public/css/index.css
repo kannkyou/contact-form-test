@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 40px 15px 60px;
+    max-width: 900px;
+}
+
+.contact-form__heading h2 {
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form__group-title {
+    width: 200px;
+    padding-right: 24px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+.form__group-content {
+    flex: 1;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+    font-size: 12px;
+}
+
+.name-inputs {
+    display: flex;
+    gap: 24px;
+}
+
+.name-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.name-field input {
+    width: 160px;
+}
+
+.form__input--text input,
+.form__input--textarea textarea,
+.name-field input,
+.form__select--pulldown select {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f7f4f2;
+    font-size: 14px;
+    color: #82746b;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #d0bfb3;
+}
+
+
+
+.form__select--radio {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.form__select--radio input[type="radio"] {
+    accent-color: #82746b;
+}
+
+.form__input--text input[type="tel"] {
+    width: 120px;
+    text-align: center;
+}
+
+.form__input--text span {
+    display: inline-block;
+    margin: 0 8px;
+    color: #82746b;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+.form__select--pulldown {
+    position: relative;
+    display: inline-block;
+}
+
+.form__select--pulldown select {
+    color: #82746b;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form__select--pulldown::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #cbb8aa;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #82746b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.form__button-submit:hover {
+    opacity: 0.9;
+}

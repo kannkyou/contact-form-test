@@ -1,0 +1,347 @@
+.admin-logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.admin-logout__button {
+    font-size: 13px;
+    color: #82746b;
+    border: 1px solid #e0d6cd;
+    padding: 4px 16px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.admin-logout__button:hover {
+    opacity: 0.7;
+}
+
+.admin-heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.admin-heading h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #82746b;
+}
+
+.admin-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.admin-search {
+    margin-bottom: 20px;
+}
+
+.admin-search__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.admin-search__item input[type="text"] {
+    flex: 1;
+    min-width: 320px;
+}
+
+.admin-search input[type="text"],
+.admin-search input[type="date"] {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #e0dfde;
+    font-size: 14px;
+    background-color: #fbfbfb;
+    color: #82746b;
+    box-sizing: border-box;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-wrapper select {
+    height: 40px;
+    padding: 0 32px 0 12px;
+    border: 1px solid #e0dfde;
+    font-size: 14px;
+    background-color: #fbfbfb;
+    color: #82746b;
+    box-sizing: border-box;
+    width: 100%;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #e0dfde;
+    pointer-events: none;
+}
+
+.admin-search__button--primary,
+.admin-search__button--reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 24px;
+    font-size: 13px;
+    box-sizing: border-box;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.admin-search__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-search__button--primary {
+    border: none;
+    background-color: #82746b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.admin-search__button--reset {
+    border: 1px solid #d6ccc4;
+    background-color: #f8f5f1;
+    color: #82746b;
+    cursor: pointer;
+}
+
+.admin-search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-export {
+    margin: 8px 0 12px;
+}
+
+.admin-export__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 13px;
+    padding: 4px 14px;
+    border: 1px solid #e0d6cd;
+    background-color: #f7f4f2;
+    color: #b8afa7;
+}
+
+.admin-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-left: 1px solid #e0d6cd;
+    border-right: 1px solid #e0d6cd;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 10px 14px;
+    font-size: 13px;
+    border-bottom: 1px solid #e0d6cd;
+}
+
+.admin-table th {
+    background-color: #82746b;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+}
+
+.admin-table td {
+    color: #82746b;
+}
+
+.admin-table table tbody tr:hover {
+    background-color: #f3efeb;
+    cursor: pointer;
+}
+
+.admin-table__action {
+    text-align: right;
+}
+
+.admin-table__detail-button {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #e0d6cd;
+    background-color: #ffffff;
+    color: #82746b;
+    text-decoration: none;
+}
+
+.admin-table__detail-button:hover {
+    background-color: #f7f4f2;
+}
+
+.admin-table__empty {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li a,
+.pagination li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #d6ccc4;
+    background-color: #f8f5f1;
+    color: #82746b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    background-color: #e5ddd6;
+}
+
+.pagination li.active span {
+    background-color: #82746b;
+    color: #fff;
+    border-color: #82746b;
+}
+
+.pagination li.disabled span {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.modal-overlay.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 640px;
+    max-width: 90%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 32px 40px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 11;
+}
+
+.modal.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #d8d3ce;
+    background-color: #fff;
+    font-size: 20px;
+    color: #82746b;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.modal-table th,
+.modal-table td {
+    padding: 6px 4px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.modal-table th {
+    text-align: left;
+    width: 160px;
+    font-weight: 600;
+    color: #82746b;
+}
+
+.modal-table td {
+    color: #82746b;
+}
+
+#deleteForm {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.modal__delete-button {
+    display: inline-block;
+    padding: 8px 32px;
+    border: none;
+    background-color: #c7563b;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal__delete-button:hover {
+    opacity: 0.85;
+}

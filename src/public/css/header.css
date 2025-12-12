@@ -1,0 +1,29 @@
+.header {
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+    background-color: #ffffff;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-family: "Times New Roman";
+    color: #82746b;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", "YuGothic", "游ゴシック体", sans-serif;
+    color: #82746b;
+    background-color: #ffffff;
+}
